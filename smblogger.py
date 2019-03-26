@@ -74,14 +74,13 @@ smbserver.SMB2Commands = SMB2Commands
 
 def main():
     logger.init()
-    print version.BANNER
     logging.getLogger().setLevel(logging.DEBUG)
 
     server = smbserver.SimpleSMBServer(listenAddress="0.0.0.0", listenPort=445)
     server.setSMB2Support(True)
     server.setSMBChallenge('')
 
-    print "i run now:"
+    print "Starting server:"
     server.start()
 
 if __name__ == '__main__':
