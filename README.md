@@ -1,5 +1,5 @@
 # smblogger
-Log requests of requested SMB paths (for OOB exploits).
+Log requests of requested SMB paths (for OOB exploits). This script was made for educational purposes.
 
 #### What do I need it for?
 This is useful in situations where you want to exfiltrate data via SMB. For example, you found SQL injection but you don't have a domain or can't use DNS. This is common inside private networks without internet access.
